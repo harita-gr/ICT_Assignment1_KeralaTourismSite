@@ -14,7 +14,7 @@ function registerValidate()
 
     let emailerr=document.getElementById("email-error");
     let passerr=document.getElementById("password-error");
-    let passerr2=document.getElementById("Cpassword-error");
+    let passerr2=document.getElementById("cpassword-error");
     let nameerr=document.getElementById("name-error");
     let phnoerr=document.getElementById("phno-error");
 
@@ -75,23 +75,21 @@ function registerValidate()
         passerr2.innerHTML = "**Field cannot be empty!"
         flag=1;
     }
-
-    if(password2.value.matches(password.value))
+    
+    else if(password2.value !== password.value)
         {
-            flag=0;
+            passerr2.innerHTML = "**Passwords not matching!"
+            flag=1;
         }
-    else{
-        passerr2.innerHTML = "**Passwords not matching!"
-        flag=1;
-    }
+     else{
+          flag=0;
+     }   
 
     if(flag==1){
         return false;
     }
 
 }
-
-
 
 
 // Password Meter
