@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts/jquery-3.5.1.min.js"></script>
+<!-- <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.0.0.js"></script> -->
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -40,25 +42,25 @@
     <form  onsubmit="return formValidate()" action="index.html">
         <div class="form-group">
             <label>Full Name:</label> 
-            <input type="text" name="fullname" placeholder="Enter your name.." class="form-control" id="fullname" autofocus >
+            <input type="text" name="fullname" placeholder="Enter your name.." class="form-control" id="fullname" autofocus required>
             <span id="name-error" class="text-danger font-weight-bold"></span>
         </div>
         <div class="form-group">
             <label>Email ID:</label> 
-            <input type="email" name="email" placeholder="Enter your email ID.." class="form-control" id="email">
+            <input type="email" name="email" placeholder="Enter your email ID.." class="form-control" id="email" required>
             <span id="email-error" class="text-danger font-weight-bold"></span>   
         </div>
         <div class="form-group" >
             <label>Phone Number:</label> 
-            <input type="text" name="phno" placeholder="Enter your Phone No.." class="form-control" id="phno" title="Please enter the phone number in any of the format: " >
+            <input type="text" name="phno" placeholder="Enter your Phone No.." class="form-control" id="phno" title="Please enter the phone number in any of the format: " required >
             <span id="phno-error" class="text-danger font-weight-bold"></span>
         </div>
         <!-- Password Validations -->
         <div class="form-group field">
             <label>Password:</label> 
-            <input type="password" name="password" placeholder="Enter your password.." class="form-control" id="password" onkeyup="trigger()" >    
+            <input type="password" name="password" placeholder="Enter your password.." class="form-control" id="password" onkeyup="trigger()" required >    
             <span id="password-error" class="text-danger font-weight-bold"></span> 
-            <span class="showBtn"><small>SHOW</small></span>
+            <span class="showBtn"><small>SHOW PASSWORD</small></span>
         </div>
         <div class="indicator">
             <span class="weak"></span>
@@ -69,14 +71,15 @@
          <!-- /Password  Strength Validations -->
          <div class="form-group">
             <label>Confirm Password:</label> 
-            <input type="password" name="password-confirm" placeholder="Confirm your password.." class="form-control" id="password-confirm" > 
+            <input type="password" name="password-confirm" placeholder="Confirm your password.." class="form-control" id="password-confirm" required> 
             <span id="cpassword-error" class="text-danger font-weight-bold"></span> 
         </div>
-         <input type="checkbox" id="checkbox-tc"> <small>Accept Terms & Conditions</small> <br/> <br>
+         <input type="checkbox" id="checkbox-tc" required> <small>Accept Terms & Conditions</small> <br/> <br>
          <input type="submit" value="Sign Up" class="btn btn-primary" style="margin-left: 2px;width:70%;"> <br/> 
     </form>
 </div>
 <!-- /Sign Up Form -->
+<!-- <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script> -->
 
 <script src="scripts/passwordstrength.js"></script>
 <script src="scripts/validate.js"></script>
