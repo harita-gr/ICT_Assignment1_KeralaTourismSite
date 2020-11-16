@@ -1,11 +1,12 @@
 
-function formValidate()
+function registerValidate()
 {   
-    let fullname = document.getElementById('fullname').value;
-    let phno = document.getElementById('phno').value;
-    let email=document.getElementById('email').value;
-    let password=document.getElementById('password').value;
-    let password2=document.querySelector('password-confirm').value;
+    const fullname = document.getElementById('fullname').value;
+    const phno = document.getElementById('phno').value;
+    const email=document.getElementById('email').value;
+    const password=document.getElementById('password').value;
+    const password2=document.querySelector('password-confirm').value;
+    alert(fullname,phno,email,password);
 
     let emailerr=document.getElementById("email-error");
     let passerr=document.getElementById("password-error");
@@ -17,7 +18,7 @@ function formValidate()
     let phnoCheck= /^([0-9]{3,10})?([\s.-])?([0-9]{3})?([\s.-])?([0-9]{4})$/;
     let passwordCheck=/^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,16}$/
     //let nameCheck= /^([a-zA-Z\.]{2,30})\s([a-zA-Z\.]{2,30}+)$/;
-
+    var flag;
     //FULL NAME
     if(fullname.trim() =="" || fullname.trim()== 'null')
     {
@@ -75,10 +76,6 @@ function formValidate()
         {
             flag=0;
         }
-    // if(password2.trim() === password.trim())
-    // {
-    //     flag=0;
-    // }
     else{
         passerr2.innerHTML = "**Passwords not matching!"
         flag=1;
