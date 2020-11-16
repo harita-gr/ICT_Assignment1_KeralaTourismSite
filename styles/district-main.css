@@ -1,0 +1,39 @@
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff !important;
+    background-clip: border-box;
+    text-align: center !important;
+    border: 1px solid white !important;
+    border-radius: .25rem;
+    width: 15rem !important;
+    float: left !important;
+    height: 10% !important;
+    margin-left: 10px !important;
+}
+
+.card-img-top{
+    height: 150px !important; 
+}
+
+a{
+    text-decoration: none !important;
+}
+
+header h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    box-sizing: border-box ;
+}
+
+article p{
+    text-align: justify;
+    padding: 100px;
+    box-sizing: border-box ;
+}

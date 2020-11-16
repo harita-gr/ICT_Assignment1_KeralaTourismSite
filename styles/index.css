@@ -1,0 +1,139 @@
+header{
+    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    height: 5%;
+    box-sizing: border-box;
+}
+
+.logo h3{
+    position:relative;
+    float: right;
+    margin-right:35%;
+    margin-top: 2%;
+    font-family:'Quintessential', cursive;
+    color: rgb(4, 78, 4);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+header h3{
+    text-align: center;
+    margin-top: 20px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    box-sizing: border-box;
+    position: sticky;
+    z-index:1;
+    top: 0%;
+}
+nav ul {
+     display: flex;
+     margin: 0;
+     padding: 0 100px;
+     float: left;     
+}
+
+nav ul li {
+    list-style-type: none;
+    display: list-item;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left !important;
+    margin-left: 50px !important;
+    margin-top: 10px;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none !important;
+    color: white;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+      background-color: white;
+      color: black;
+}
+
+nav ul li form input{
+    right: 20px;
+    height:25px;
+}
+marquee{
+    /* position:relative; */
+    background-color: pink;
+}
+
+/* .carousel{
+    position:relative !important;
+} */
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff !important;
+    background-clip: border-box;
+    border-radius: .25rem;
+    width: 15rem !important;
+    float: left !important;
+    height: 10% !important;
+    margin-left: 10px !important;
+}
+
+.card-img-top{
+    height: 150px !important; 
+}
+
+.footer{
+    clear: both;
+    position: relative;
+    color: black;
+    background: rgb(178, 199, 212) !important;
+    text-align: center;
+    height: 150px;
+    margin-top: -200px; /* To make footer stick on bottom*/
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.trend-spots{
+    float: right;
+    height: 300px;
+    width:30%;
+    margin-top:-600px;
+}
+
+.fig img{
+    height:300px;
+    width:400px;
+    margin-left: 30px;
+}
+
+.footer figcaption{
+    margin-left: 10px;
+}
+
+.rates{
+    border: 2px solid black;
+    float:right;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+    margin-right: 300px;
+    margin-top: -140px;
+}
+
+section .history{
+    float: right;
+    height: 300px ;
+    width: 750px;
+    margin-top: -650px;
+    text-align: justify;
+}

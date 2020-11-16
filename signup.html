@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles/signup-2.css">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/1200px-Kerala_God's_Own_Country_Logo.svg.png">
+ </head>
+<body>
+ <!-- Navigation -->
+ <nav>
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about-kerala.html" >ABOUT KERALA</a></li>
+    <li><a href="districts-main.html" >DISTRICTS</a></li>
+    <li><a href="signup.html" class="active">REGISTER</a></li>
+    <li><a href="login.html" target="_blank">LOGIN</a></li>
+    <li><form action="#"><input type="text" placeholder="Search"></form></li>
+    <li></li>
+    </ul>
+</nav>
+<!-- Navigation -->
+<!-- Sign Up Form -->
+<div class="container">
+    <h3> SIGN UP</h3>
+    <form  onsubmit="return formValidate()" action="index.html">
+        <div class="form-group">
+            <label>Full Name:</label> 
+            <input type="text" name="fullname" placeholder="Enter your name.." class="form-control" id="fullname" autofocus >
+            <span id="name-error" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="form-group">
+            <label>Email ID:</label> 
+            <input type="email" name="email" placeholder="Enter your email ID.." class="form-control" id="email">
+            <span id="email-error" class="text-danger font-weight-bold"></span>   
+        </div>
+        <div class="form-group" >
+            <label>Phone Number:</label> 
+            <input type="text" name="phno" placeholder="Enter your Phone No.." class="form-control" id="phno" title="Please enter the phone number in any of the format: " >
+            <span id="phno-error" class="text-danger font-weight-bold"></span>
+        </div>
+        <!-- Password Validations -->
+        <div class="form-group field">
+            <label>Password:</label> 
+            <input type="password" name="password" placeholder="Enter your password.." class="form-control" id="password" onkeyup="trigger()" >    
+            <span id="password-error" class="text-danger font-weight-bold"></span> 
+            <span class="showBtn"><small>SHOW</small></span>
+        </div>
+        <div class="indicator">
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+          </div>
+        <div class="text"></div><br>
+         <!-- /Password  Strength Validations -->
+         <div class="form-group">
+            <label>Confirm Password:</label> 
+            <input type="password" name="password-confirm" placeholder="Confirm your password.." class="form-control" id="password-confirm" > 
+            <span id="cpassword-error" class="text-danger font-weight-bold"></span> 
+        </div>
+         <input type="checkbox" id="checkbox-tc"> <small>Accept Terms & Conditions</small> <br/> <br>
+         <input type="submit" value="Sign Up" class="btn btn-primary" style="margin-left: 2px;width:70%;"> <br/> 
+    </form>
+</div>
+<!-- /Sign Up Form -->
+
+<script src="scripts/passwordstrength.js"></script>
+<script src="scripts/validate.js"></script>
+
+</body>
+</html>
