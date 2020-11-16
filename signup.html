@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Jquery-->
+<!--Jquery-->
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script> 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 
@@ -49,13 +49,13 @@
         </div>
         <div class="form-group" >
             <label>Phone Number:</label> 
-            <input type="text" name="phno" placeholder="Enter your Phone No.." class="form-control" id="phno" title="Please enter the phone number in any of the format: " required >
+            <input type="text" name="phno" placeholder="Enter your Phone No.." class="form-control" id="phno" title="Please enter the phone number in any of the format: XXX-XXX-XXXX, XXX.XXX.XXXX, XXX XXX XXXX" required >
             <span id="phno-error" class="text-danger font-weight-bold"></span>
         </div>
         <!-- Password Validations -->
         <div class="form-group field">
             <label>Password:</label> 
-            <input type="password" name="password" placeholder="Enter your password.." class="form-control" id="password" onkeyup="trigger()" required >    
+            <input type="password" name="password" placeholder="Enter your password.." class="form-control" id="password" onkeyup="trigger()" title="Minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number" required >    
             <span id="password-error" class="text-danger font-weight-bold"></span> 
             <span class="showBtn"><small>SHOW PASSWORD</small></span>
         </div>
